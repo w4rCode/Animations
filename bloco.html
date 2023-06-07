@@ -1,0 +1,36 @@
+fundo animado
+letra com type 
+caixinhas com efeito de vidro ou morphism
+hover animado 
+
+keyframes animation{
+    25%{
+        content: 'developer';
+        width: 8.5ch;
+    }
+    40%{
+        width: 0ch;
+    }
+    75%{
+        content: 'designer';
+        width: 7.5ch;
+    }
+    90%{
+        width: 0ch;
+    }
+}
+@keyframes blinking{
+    100%{
+        opacity: 0;
+    }
+}
+#typing{
+    font-size: 25px;
+    overflow: hidden;
+    position: relative;
+}
+#typing::after{
+    content: "developer";
+    display: inline-block;
+    animation:  animation 6.5s steps(9) infinite;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <main>
+            <h1 id="typing"><span class="spanColor">CSS</span> transform  <br> <span id="element"></span>  </h1>
+            
+            <p id="ptext">The transform property applies a 2D or 3D transformation to an element.<br> This property <span class="spanColor">allows</span> you to rotate, scale, move, skew, etc..</p>
+            <section class="boxs">
+                <div class="box1">
+                    <img src="./images/circulo.png" alt="img" class="imgAnimation" id="circulo"></img>
+                    <h2> Scale </h2>
+                    <p> The <span class="spanColor">Scale</span> property allows you to change the size of elements.</p>
+                </div>
+                <div class="box2">
+                    <img src="./images/quadrado.png" alt="quadrado" class="imgAnimation" id="quadrado"></img>
+                    <h2> Rotate </h2>
+                    <p> The <span class="spanColor">rotate</span> property allows you to rotate elements.</p>
+                </div>
+                <div class="box3">
+                    <img src="./images/triangulo.png" alt="img" class="imgAnimation" id="triangulo"></img>
+                    <h2> Translate</h2>
+                    <p> The <span class="spanColor">Translate</span> property allows you to change the position of elements.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>CSS transform properties</i> ', 'the most used'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
