@@ -20,7 +20,7 @@ main{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin: 0.6em 10%;
+    margin: 0.8rem 10%;
         backdrop-filter: blur(0px) saturate(200%);
         -webkit-backdrop-filter: blur(0px) saturate(200%);
         background-color: rgba(255, 238, 238, 0.849);
@@ -177,3 +177,20 @@ background-position: 0% 50%;
     font-style: italic;
     font-weight: bold;
 }
+@media (max-width: 2100px){
+    main{
+        width: 80%;
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin:4% 10%;
+            backdrop-filter: blur(0px) saturate(200%);
+            -webkit-backdrop-filter: blur(0px) saturate(200%);
+            background-color: rgba(255, 238, 238, 0.849);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);
+        }
+    
+    }
